@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#6a5acd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Potato Chat 安装</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 弹窗提示 -->
+    <div id="download-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+            <h3>下载提示</h3>
+            <p>本站提供的下载链接均为夸克网盘分享链接。点击下载按钮后，您将跳转至夸克网盘页面，在那里可以直接下载安装包。</p>
+            <div class="modal-buttons">
+                <button id="confirm-modal" class="primary-button">我知道了</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Potato Chat 安装</h1>
+            <p>简单几步，轻松安装 Potato Chat</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>欢迎使用 Potato Chat</h2>
+            <p>Potato Chat 是一款功能强大的聊天工具，本指南将帮助您在电脑和安卓设备上安装使用。请选择您的设备类型查看相应的安装指南，按照步骤操作即可成功安装。如果您在安装过程中遇到任何问题，请参考下方的常见问题解答。</p>
+            <div class="platform-selection-tip">
+                <p>👇 请点击下方图标选择您的设备类型 👇</p>
+            </div>
+            <div class="guide-icons">
+                <a href="javascript:void(0)" class="guide-icon-link" data-target="android">
+                    <div class="guide-icon android">
+                        <i class="fab fa-android"></i>
+                        <span>Android</span>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="guide-icon-link" data-target="windows">
+                    <div class="guide-icon windows">
+                        <i class="fab fa-windows"></i>
+                        <span>Windows</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="platforms">
+            <section class="platform-card" id="android" style="display: none;">
+                <div class="platform-icon">
+                    <i class="fab fa-android"></i>
+                </div>
+                <h2>Android</h2>
+                <div class="steps">
+                    <ol>
+                        <li>点击下方"下载 Android 版"按钮</li>
+                        <li>在夸克网盘中点击"下载"</li>
+                        <li>下载完成后点击安装包进行安装</li>
+                        <li>如系统提示"未知来源"，请前往设置允许安装</li>
+                        <li>安装完成后点击"打开"即可使用</li>
+                    </ol>
+                </div>
+                <div class="video-container">
+                    <h3>安装视频教程</h3>
+                    <video id="android-tutorial-video" controls preload="metadata" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 400 225' preserveAspectRatio='xMidYMid slice'%3E%3Crect fill='%236a5acd' width='100%25' height='100%25'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='Arial, sans-serif'%3E视频加载中...%3C/text%3E%3C/svg%3E">
+                        <source src="https://pan.066677.xyz/d/YiDong/%E6%89%8B%E6%9C%BA%E8%A7%86%E9%A2%91/%5BDLPanda.com%5Bbubu07331%5D7446415122798513409.mp4?sign=YnK5rkV_l1oQ8NCfVLdzsoJENkIorlJuGirm4j-d5mE=:0" type="video/mp4">
+                        您的浏览器不支持视频播放，请更新浏览器或使用其他浏览器。
+                    </video>
+                </div>
+                <div class="download-section">
+                    <a href="javascript:void(0)" class="download-button" data-link="https://pan.quark.cn/s/0c2761129c5c" target="_blank">
+                        <i class="fas fa-download"></i> 下载 Android 版
+                    </a>
+                </div>
+            </section>
+
+            <section class="platform-card" id="windows" style="display: none;">
+                <div class="platform-icon">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h2>Windows</h2>
+                <div class="steps">
+                    <ol>
+                        <li>点击下方"下载 Windows 版"按钮</li>
+                        <li>在夸克网盘中点击"下载"</li>
+                        <li>下载完成后，解压缩下载的文件</li>
+                        <li>运行安装程序，按照向导完成安装</li>
+                        <li>安装完成后，点击桌面图标启动应用</li>
+                    </ol>
+                </div>
+                <div class="video-container">
+                    <h3>安装视频教程</h3>
+                    <p class="video-unavailable">Windows版教程视频即将上线</p>
+                </div>
+                <div class="download-section">
+                    <a href="javascript:void(0)" class="download-button" data-link="https://pan.quark.cn/s/84be3178a70d" target="_blank">
+                        <i class="fas fa-download"></i> 下载 Windows 版
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <h2>常见问题</h2>
+            <div class="faq-item">
+                <h3>安装过程中提示"未知来源"怎么办？</h3>
+                <p>在 Android 设备上，您需要在设置中允许安装来自未知来源的应用。通常路径为：设置 > 安全 > 未知来源（或设置 > 应用和通知 > 特殊应用权限 > 安装未知应用）。在 Windows 上，如果出现安全提示，点击"更多信息"，然后点击"仍要运行"。</p>
+            </div>
+            <div class="faq-item">
+                <h3>安装完成后无法启动应用怎么办？</h3>
+                <p>请尝试以下解决方案：1. 重启设备后再次启动应用；2. 检查您的设备是否满足最低系统要求（Android 7.0+ 或 Windows 10+）；3. 确保您下载的是最新版本的应用；4. 尝试卸载后重新安装应用。</p>
+            </div>
+            <div class="faq-item">
+                <h3>如何更新到最新版本？</h3>
+                <p>Potato Chat 会自动检查更新，当有新版本可用时会提示您更新。您也可以定期访问本网站获取最新版本。更新时，只需下载并安装新版本，无需先卸载旧版本。</p>
+            </div>
+            <div class="faq-item">
+                <h3>应用需要哪些权限？</h3>
+                <p>Potato Chat 需要以下权限才能正常运行：存储权限（保存媒体文件）、摄像头和麦克风权限（语音和视频通话）、通知权限（接收消息通知）。您可以在应用设置中随时管理这些权限。</p>
+            </div>
+            <div class="faq-item">
+                <h3>遇到其他问题怎么办？</h3>
+                <p>如果您遇到其他安装或使用问题，请尝试查看应用内的帮助中心，或联系我们的客服团队获取支持。您也可以在下载页面的评论区留言，我们会尽快回复。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Potato Chat</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fas fa-seedling"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html> 
